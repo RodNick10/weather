@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="text-center">Weather Dashboard</h1>
+
+      <div class="text-center"></div>
+    </div>
+    <div class="row">
+      <div class=".col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Search for a city <br />
+            <input
+              id="search"
+              class="form-control"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <a id="btnsearch" class="btn btn-primary" href="#" role="button"
+              >Link</a
+            >
+          </div>
+          <ul id="cityList" class="list-group list-group-flush">
+            <!-- <li class="list-group-item">Austin</li>
+            <li class="list-group-item">Chicago</li>
+            <li class="list-group-item">New York</li>
+            <li class="list-group-item">Orlando</li>
+            <li class="list-group-item">San Francisco</li>
+            <li class="list-group-item">Seatle</li>
+            <li class="list-group-item">Denver</li>
+            <li class="list-group-item">Atlanta</li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="card">
+          <div id="newcityDiv" class="card-body">
+            <h3 id="cityName"></h3>
+            <ul>
+              <li id="temperature"></li>
+              <li id="humidity"></li>
+              <li id="wind">Wind Speed</li>
+              <li>UV Index</li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <h4>3-Day Forecast</h4>
+        <div class="card-deck">
+          <div class="card">
+            <!--<img src="..." class="card-img-top" alt="..." />-->
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
